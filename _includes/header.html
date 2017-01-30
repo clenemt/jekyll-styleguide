@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  {% if page.title %}
+    {{ page.title }} &middot; {{ site.title }}
+  {% else %}
+    {{ site.title }} &middot; {{ site.description }}
+  {% endif %}
+</title>
+
+{% include social.html %}
+
+<!-- Your styleguide CSS -->
+<link href="{{ site.baseurl }}{{ site.styleguide-css | default: "/dist/css/styleguide.css" }}" rel="stylesheet">
+
+<!-- Documentation CSS -->
+<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+<link rel="icon" href="{{ site.baseurl }}/favicon.ico">

@@ -1,0 +1,51 @@
+// Gives the breakpoint next to the passed breakpoint
+@function bp-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+// Gives the `min-width` for the passed breakpoint
+@function bp-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+// Gives the `max-width` for the passed breakpoint
+@function bp-max($name, $breakpoints: $grid-breakpoints) {
+  $next: np-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+}
+
+// Apply media query from breakpoint `min-width` and up
+@mixin mq-up($name, $breakpoints: $grid-breakpoints) {
+  $min: bp-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Apply media query from breakpoint `max-width` and down
+@mixin mq-down($name, $breakpoints: $grid-breakpoints) {
+  $max: bp-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Create container `max-width` wrapping
+@mixin make-container($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint, $max-width in $max-widths {
+    @include mq-up($breakpoint, $breakpoints) {
+      width: $max-width;
+      max-width: 100%;
+    }
+  }
+}

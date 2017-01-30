@@ -1,0 +1,23 @@
+<header class="doc-navbar">
+  <nav class="doc-container" id="nav-primary">
+    <ul class="doc-nav">
+      {% assign sorted = site.html_pages | sort: 'priority' %}
+      {% assign collection_name =  site.collection_name %}
+      {% for _page in sorted %}
+        {% assign page_title = _page.title | default: _page.name %}
+        {% assign active = nil %}
+
+        {% if page.url == _page.url or page.collection == collection_name and _page.name == 'index.html'%}
+          {% assign active = 'doc-nav__link--active' %}
+        {% endif %}
+
+        <li class="doc-nav__item">
+          <a class="doc-nav__link {{ active }}" href="{{ site.baseurl }}{{ _page.url }}">
+            {{ page_title }}
+          </a>
+        </li>
+
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

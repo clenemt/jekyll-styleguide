@@ -1,0 +1,29 @@
+// Main content holder
+.doc-content {
+  flex: 0 0 80%;
+  max-width: 80%;
+  padding: 0 ($spacer * 3) ($spacer * 2);
+}
+
+.doc-sidebar {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.doc-sidebar__wrap {
+  .doc-sidebar--fixed & {
+    position: fixed;
+    margin-top: ($spacer * 3);
+  }
+}
+
+.doc-sidebar__nav {
+  margin-left: ($spacer * .5);
+}
+
+.doc-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}

@@ -1,0 +1,54 @@
+.doc-example {
+  padding: ($spacer * 2);
+  border: 1px solid $gray-03;
+  border-radius: $br;
+
+  &--resizable {
+    position: relative;
+  }
+}
+
+.doc-example__drag-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  background: #00f;
+  opacity: 0.1;
+  cursor: col-resize;
+
+  &--left {
+    left: -15px;
+  }
+
+  &--right {
+    right: -15px;
+  }
+}
+
+.doc-example + .highlight {
+  z-index: 1;
+  margin-top: -$br;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.highlight {
+  position: relative;
+  padding: ($spacer * 2);
+  margin: 0 0 $spacer;
+  background: $gray-05;
+  border: 1px solid $gray-03;
+  border-radius: $br;
+
+  pre {
+    font-size: 90%;
+    overflow: auto;
+    margin: 0;
+  }
+
+  code {
+    font-family: $ff-code;
+    line-height: $lh-code;
+  }
+}

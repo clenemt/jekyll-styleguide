@@ -1,0 +1,23 @@
+// Our main `container`
+.doc-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  @include make-container();
+}
+
+// Our `row` class
+.doc-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// Everything under this will be a `col`
+.doc-row > * {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 1px;
+  max-width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+}

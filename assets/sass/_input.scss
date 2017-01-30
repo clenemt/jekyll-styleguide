@@ -1,0 +1,25 @@
+.doc-form {
+  margin-bottom: $spacer;
+}
+
+.doc-input {
+  display: block;
+  width: 100%;
+  padding: ($spacer / 3) ($spacer / 2);
+  font-size: $fs;
+  line-height: $lh;
+  color: $gray-02;
+  background-color: $gray-05;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: $br;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  &:focus {
+    color: $gray-02;
+    background-color: #fff;
+    border-color: $blue-02;
+    outline: none;
+  }
+}

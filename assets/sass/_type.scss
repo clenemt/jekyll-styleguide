@@ -1,0 +1,58 @@
+.doc-text > {
+
+  p, ul, li, h1, h2, h3, h4,
+  strong, p strong, a strong, li strong, ul strong, span strong, em strong,
+  em, p em, li em, ul em, span em,
+  a, p a, li a, ul a, span a, strong a, em a {
+    font-size: $fs;
+    font-family: $ff;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $gray-01;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  p {
+    margin-bottom: $spacer;
+  }
+
+  ul {
+    margin-bottom: $spacer;
+    padding-left: ($spacer * 2);
+  }
+
+  strong, p strong, a strong, li strong, ul strong, span strong, em strong {
+    font-weight: 600;
+  }
+
+  a, li a, ul a, span a, strong a, em a, a strong, a em,
+  p a, p a em, p a strong, p strong a, p em a {
+    color: $blue-02;
+  }
+
+  code, p code, li code, ul code, a code {
+    font-size: $fs-code;
+    font-family: $ff-code;
+    font-weight: $fw;
+    line-height: $lh;
+    background: $gray-05;
+    border: 1px solid $gray-04;
+    border-radius: $br;
+    padding: 0 ($spacer * .25);
+    color: $red-01;
+  }
+
+  h1, h2, h3, h4 {
+    line-height: $lh-headings;
+    font-weight: 600;
+    margin-top: ($spacer * 3);
+    margin-bottom: ($spacer * 1.75);
+  }
+
+  h1 { font-size: $fs-h1 }
+  h2 { font-size: $fs-h2 }
+  h3 { font-size: $fs-h3 }
+  h4 { font-size: $fs-h4 }
+}

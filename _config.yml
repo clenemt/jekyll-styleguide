@@ -1,0 +1,71 @@
+# This config file is meant for settings that affect your whole styleguide, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: My styleguide
+description: >                    # this means to ignore newlines until "baseurl:"
+  Write an awesome description about your styleguide web site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results).
+authors: >                        # the authors of your styleguide
+  @clenemt, some other dude, and beloved contributors
+baseurl: ""                       # the subpath of your styleguide, e.g. `/styleguide`
+url: "http://mystyleguide.com"    # the base hostname & protocol for your site
+lang: "en"                        # the <html> default lang
+
+# Styleguide specific
+styleguide-css: ""                # (opt) your styleguide stylesheet url
+styleguide-js: ""                 # (opt) your styleguide javascript url
+styleguide-main-menu: true        # (opt) put to `false` to disable the main menu
+
+# Collections
+collection_name: 'styleguide'
+collections:
+  styleguide:
+    output: true
+    permalink: /:path/
+
+# Scope
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "styleguide"
+    values:
+      layout: styleguide
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Sass settings
+sass:
+  add_charset: true
+  sass_dir: assets/sass
+  style: :compressed
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - CNAME
+  - LICENSE
+  - README.md
+  - node_modules
+
+include:
+  - _pages
+
+# Plugin settings
+gems:
+  - jekyll-sitemap

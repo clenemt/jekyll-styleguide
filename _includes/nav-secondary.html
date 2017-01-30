@@ -1,0 +1,58 @@
+<form class="doc-form">
+  <input type="text" class="doc-input" id="search-input" placeholder="Search..." autocomplete="off">
+</form>
+
+<nav id="nav-secondary">
+  <ul class="doc-sidebar__nav doc-nav">
+    {% assign collection_name = site.collection_name %}
+    {% assign collection_root = site.collection_name | prepend: "_" %}
+    {% assign components = site[collection_name] | sort: 'url' %}
+    {% assign folders = "" | split:"|" %}
+    {% assign needs_closing = false %}
+
+
+    {% for component in components %}
+      {% assign component_title = component.title | default: component.slug | replace: "-", " " | capitalize %}
+      {% assign component_folder = component.path | split: "/" | pop | last | capitalize %}
+      {% assign active = nil %}
+
+      {% unless folders contains component_folder %}
+
+        {% if needs_closing %}
+          </ul></li>
+          {% assign needs_closing = false %}
+        {% endif %}
+
+        {% if page.url contains component_folder %}
+          {% assign active = 'doc-nav__link--active' %}
+        {% endif %}
+
+        {% if component_folder != collection_root %}
+          <li class="doc-nav__item doc-nav__item--category">
+            <span class="doc-nav__link {{ active }}">{{ component_folder }}</span>
+            <ul class="doc-nav">
+
+          {% assign folders = folders | push: component_folder %}
+          {% assign needs_closing = true %}
+        {% endif %}
+
+        {% assign active = nil %}
+      {% endunless %}
+
+      {% if page.url == component.url %}
+        {% assign active = 'doc-nav__link--active' %}
+      {% endif %}
+
+      <li class="doc-nav__item">
+        <a class="doc-nav__link {{ active }}" href="{{ site.baseurl }}{{ component.url }}">
+          {{ component_title }}
+        </a>
+      </li>
+
+    {% endfor %}
+
+    {% if needs_closing %}
+      </ul></li>
+    {% endif %}
+  </ul>
+</nav>

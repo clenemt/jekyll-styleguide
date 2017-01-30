@@ -1,0 +1,51 @@
+$gray-01: #323b43;
+$gray-02: #59626a;
+$gray-03: #ced7df;
+$gray-04: #eff3f6;
+$gray-05: #f4f7f9;
+
+$blue-01: #547e9a;
+$blue-02: #168eea;
+
+$red-01: #bd081c;
+$red-02: #ee4f4f;
+
+$light: #fff;
+$dark: #000;
+
+$ff: "Open Sans", Helvetica, Arial, sans-serif;
+$ff-code: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$fw: 400;
+
+$fs: 16px;
+$fs-code: 14px;
+$fs-h1: 32px;
+$fs-h2: 26px;
+$fs-h3: 20px;
+$fs-h4: 18px;
+$fs-h5: 16px;
+
+$lh: 1.7;
+$lh-headings: 1.1;
+$lh-code: 1.5;
+$lh-nav: 1.1;
+
+$spacer: 15px;
+
+$br: 3px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
