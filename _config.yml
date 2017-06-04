@@ -18,7 +18,11 @@ lang: "en"                        # the <html> default lang
 # Styleguide specific
 styleguide-css: ""                # (opt) your styleguide stylesheet url
 styleguide-js: ""                 # (opt) your styleguide javascript url
-styleguide-main-menu: true        # (opt) put to `false` to disable the main menu
+
+# Design
+design:
+    main-menu: true               # (opt) put to `false` to disable the main menu
+    fixed-nav: true               # (opt) put to `false` to disable a fixed side navigation
 
 # Collections
 collection_name: 'styleguide'
