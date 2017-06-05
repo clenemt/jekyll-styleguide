@@ -100,7 +100,7 @@ eos
               "<head>",
                 "<meta charset=\"utf-8\" />",
                 "<link href=\"#{@base_url}#{@css_url}\" rel=\"stylesheet\">",
-                "<link href=\"{{ site.baseurl }}/assets/css/main.css\" rel=\"stylesheet\">",
+                "<link href=\"#{@base_url}/assets/css/main.css\" rel=\"stylesheet\">",
               "</head>",
               "<body style=\"margin: 0\">",
                 code,
