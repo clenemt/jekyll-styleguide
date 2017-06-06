@@ -1,6 +1,7 @@
 .doc-text > {
 
   p, ul, li, h1, h2, h3, h4,
+  table,
   strong, p strong, a strong, li strong, ul strong, span strong, em strong,
   em, p em, li em, ul em, span em,
   a, p a, li a, ul a, span a, strong a, em a {
@@ -19,6 +20,7 @@
   }
 
   ul {
+    list-style: disc;
     margin-bottom: $spacer;
     padding-left: ($spacer * 2);
   }
