@@ -16,7 +16,7 @@ url: "http://mystyleguide.com"    # the base hostname & protocol for your site
 lang: "en"                        # the <html> default lang
 
 # Styleguide specific
-styleguide-css: ""                # (opt) your styleguide stylesheet url
+styleguide-css: "https://www.debijenkorf.nl/etc/designs/debijenkorf-website/clientlib-all.232de5556d4148d75b55012e1230616c.css"                # (opt) your styleguide stylesheet url
 styleguide-js: ""                 # (opt) your styleguide javascript url
 
 # Design
