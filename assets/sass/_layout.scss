@@ -7,13 +7,14 @@
 
 .doc-sidebar {
   flex: 0 0 20%;
+  margin-top: ($spacer * 3);
   max-width: 20%;
 }
 
 .doc-sidebar__wrap {
-  .doc-sidebar--fixed & {
-    position: fixed;
-    margin-top: ($spacer * 3);
+  .doc-sidebar--sticky & {
+    position: sticky;
+    top: ($spacer * 3);
   }
 }
 

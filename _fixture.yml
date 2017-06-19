@@ -14,7 +14,11 @@ lang: "en"
 # Styleguide specific
 styleguide-css: ""
 styleguide-js: ""
-styleguide-main-menu: true
+
+# Design
+design:
+    main-menu: true               # (opt) put to `false` to disable the main menu
+    fixed-nav: true               # (opt) put to `false` to disable a fixed side navigation
 
 # Collections
 collection_name: 'fixture'

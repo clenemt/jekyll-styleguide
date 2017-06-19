@@ -1,0 +1,24 @@
+.doc-text > {
+
+  table {
+    border: 1px solid $gray-03;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+
+    thead {
+      border-bottom: 2px solid $gray-03;
+    }
+
+    td, th {
+      border: 1px solid $gray-03;
+      padding: $spacer/2 $spacer;
+    }
+
+    tr:nth-of-type(odd) td {
+      background-color: $gray-05;
+    }
+  }
+}

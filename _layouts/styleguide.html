@@ -5,16 +5,21 @@
   </head>
   <body>
 
-    {% if site.styleguide-main-menu %}
+    {% if site.design.main-menu %}
         {% include nav-primary.html %}
     {% endif %}
 
+    {% assign sticky = nil %}
+    {% if site.design.fixed-nav %}
+      {% assign sticky = 'doc-sidebar--sticky' %}
+    {% endif %}
+
     <div class="doc-container doc-row">
-      <div class="doc-sidebar doc-sidebar--fixed doc-text">
+      <aside class="doc-sidebar {{ sticky }} doc-text">
         <div class="doc-sidebar__wrap">
           {% include nav-secondary.html %}
         </div>
-      </div>
+      </aside>
       <main class="doc-content doc-text">
         <h1>{{ page.title }}</h1>
         {{ content }}
