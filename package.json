@@ -10,10 +10,10 @@
   "scripts": {
     "build": "bundle exec jekyll build",
     "serve": "bundle exec jekyll serve -w --config _config.yml,_config.dev.yml",
-    "release:patch": "npm version patch",
-    "release:minor": "npm version minor",
+    "release:patch": "npm version patch && release",
+    "release:minor": "npm version minor && release",
     "release:major": "npm version major && release",
-    "postversion": "git push --follow-tags && npm publish"
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
