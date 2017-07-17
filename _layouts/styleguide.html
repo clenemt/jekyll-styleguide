@@ -6,16 +6,11 @@
   <body>
 
     {% if site.design.main-menu %}
-        {% include nav-primary.html %}
-    {% endif %}
-
-    {% assign sticky = nil %}
-    {% if site.design.fixed-nav %}
-      {% assign sticky = 'doc-sidebar--sticky' %}
+      {% include nav-primary.html %}
     {% endif %}
 
     <div class="doc-container doc-row">
-      <aside class="doc-sidebar {{ sticky }} doc-text">
+      <aside class="doc-sidebar doc-sidebar--sticky doc-text">
         <div class="doc-sidebar__wrap">
           {% include nav-secondary.html %}
         </div>

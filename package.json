@@ -1,16 +1,15 @@
 {
-  "name": "jekyll-styleguide",
+  "name": "styleguide",
   "version": "0.0.1",
-  "description": "A simple jekyll styleguide boilerplate",
+  "description": "deBijenkorf jekyll styleguide",
   "main": "_config.yml",
   "dependencies": {},
   "devDependencies": {
     "release": "^1.1.5"
   },
   "scripts": {
-    "start": "bundle exec jekyll serve",
-    "start:watch": "bundle exec jekyll serve -w",
-    "test": "bundle exec jekyll serve --config _fixture.yml",
+    "build": "bundle exec jekyll serve",
+    "serve": "bundle exec jekyll serve -w --config _config.yml,_config.dev.yml",
     "release:patch": "npm version patch",
     "release:minor": "npm version minor",
     "release:major": "npm version major && release",
@@ -18,17 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clenemt/jekyll-styleguide.git"
+    "url": "https://github.com/deBijenkorf/styleguide.git"
   },
-  "keywords": [
-    "styleguide",
-    "jekyll",
-    "pattern"
-  ],
-  "author": "clenemt",
+  "author": {
+    "company": "Magazijn de Bijenkorf",
+    "email": "developers@debijenkorf.nl",
+    "url": "http://www.debijenkorf.nl/"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clenemt/jekyll-styleguide/issues"
-  },
-  "homepage": "https://github.com/clenemt/jekyll-styleguide#readme"
+    "url": "https://github.com/deBijenkorf/styleguide/issues"
+  }
 }

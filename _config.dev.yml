@@ -1,0 +1,6 @@
+# This config file is meant for settings that affect `dev` only.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+styleguide-css: "http://localhost:9000/core-assets.css"
+styleguide-js: "http://localhost:9000/core-assets.js"
