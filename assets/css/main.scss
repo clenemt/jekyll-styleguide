@@ -21,8 +21,8 @@
 @import "code";
 @import "table";
 
-// Utility classes
-@import "utilities";
+// Used in both resizable iframes & page
+@import "frame";
 
 // Syntax highlighter
 @import "syntax";
