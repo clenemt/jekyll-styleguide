@@ -2,6 +2,7 @@
   padding: ($spacer * 2);
   border: 1px solid $gray-03;
   border-radius: $br;
+  overflow: hidden;
 
   &--resizable {
     position: relative;
