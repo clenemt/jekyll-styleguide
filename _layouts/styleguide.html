@@ -9,16 +9,18 @@
       {% include nav-primary.html %}
     {% endif %}
 
-    <div class="doc-container doc-row">
-      <aside class="doc-sidebar doc-sidebar--sticky doc-text">
-        <div class="doc-sidebar__wrap">
-          {% include nav-secondary.html %}
-        </div>
-      </aside>
-      <main class="doc-content doc-text">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-      </main>
+    <div class="doc-container">
+      <div class="doc-row">
+        <aside class="doc-sidebar doc-sidebar--sticky doc-text">
+          <div class="doc-sidebar__wrap">
+            {% include nav-secondary.html %}
+          </div>
+        </aside>
+        <main class="doc-content doc-text">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+        </main>
+      </div>
     </div>
 
     {% include footer.html %}
