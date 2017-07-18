@@ -10,7 +10,7 @@ module Jekyll
       # forms: name, name=value, or name="<quoted list>"
       #
       # <quoted list> is a space-separated list of numbers
-      SYNTAX = /^([a-zA-Z0-9.+#-]+)((\s+\w+(=((\w|[0-9_-])+|"([0-9]+\s)*[0-9]+"))?)*)$/
+      SYNTAX = /^([a-zA-Z0-9.+#-]+)((\s+\w+(=(([a-zA-Z0-9,_-])+|"([0-9]+\s)*[0-9]+"))?)*)$/
 
       def initialize(tag_name, markup, tokens)
         super
@@ -19,12 +19,14 @@ module Jekyll
           @options = {}
           if defined?($2) && $2 != ''
             # Split along 3 possible forms -- key="<quoted list>", key=value, or key
-            $2.scan(/(?:\w+(?:=(?:(?:\w|[0-9_-])+|"[^"]*")?)?)/) do |opt|
+            $2.scan(/(?:\w+(?:=(?:(?:[a-zA-Z0-9,_-])+|"[^"]*")?)?)/) do |opt|
               key, value = opt.split('=')
               # If a quoted list, convert to array
               if value && value.include?('\"')
-                  value.gsub!(/"/, '')
-                  value = value.split
+                value.gsub!(/"/, '')
+                value = value.split
+              elsif value && value.include?(",")
+                value.gsub!(/,/, ' ')
               end
               @options[key.to_sym] = value || true
             end
@@ -103,7 +105,9 @@ eos
                 "<link href=\"#{@base_url}/assets/css/frame.css\" rel=\"stylesheet\">",
               "</head>",
               "<body style=\"margin: 0\">",
-                code,
+                "<div class=\"#{@options[:div]}\">",
+                  code,
+                "</div>",
                 "<script src=\"#{@base_url}#{@js_url}\"></script>",
               "</body>",
             "</html>"
