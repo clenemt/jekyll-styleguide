@@ -5,9 +5,20 @@
   "main": "_config.yml",
   "dependencies": {},
   "devDependencies": {
-    "release": "^1.1.5"
+    "release": "^1.1.5",
+    "editorconfig-tools": "^0.1.1",
+    "lint-staged": "^4.0.0",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": "lint:staged",
+  "lint-staged": {
+    "*.{md,js,css,yml,scss,html,json}": [
+      "editorconfig-tools fix",
+      "git add"
+    ]
   },
   "scripts": {
+    "lint:staged": "lint-staged",
     "build": "bundle exec jekyll build",
     "serve": "bundle exec jekyll serve -w --config _config.yml,_config.dev.yml",
     "release:patch": "npm version patch && release",

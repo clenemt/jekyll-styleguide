@@ -3,78 +3,30 @@
 
 ## How it works
 
-Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
+DBK's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive.
 
-<div class="doc-show doc-show-row">
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-  </div>
-</div>
-</div>
-
-The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent `.container`.
-
-Breaking it down, here's how it works:
-
-- Containers provide a means to center your site's contents. Use `.container` for fixed width or `.container-fluid` for full width.
-- Rows are horizontal groups of columns that ensure your columns are lined up properly. We use the negative margin method on `.row` to ensure all your content is aligned properly down the left side.
-- Content should be placed within columns, and only columns may be immediate children of rows.
-- Thanks to flexbox, grid columns without a set width will automatically layout with equal widths. For example, four instances of `.col-sm` will each automatically be 25% wide for small breakpoints.
-- Column classes indicate the number of columns you'd like to use out of the possible 12 per row. So, if you want three equal-width columns, you can use `.col-sm-4`.
-- Column `width`s are set in percentages, so they're always fluid and sized relative to their parent element.
-- Columns have horizontal `padding` to create the gutters between individual columns, however, you can remove the `margin` from rows and `padding` from columns with `.no-gutters` on the `.row`.
-- There are five grid tiers, one for each [responsive breakpoint]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/#responsive-breakpoints): all breakpoints (extra small), small, medium, large, and extra large.
-- Grid tiers are based on minimum widths, meaning they apply to that one tier and all those above it (e.g., `.col-sm-4` applies to small, medium, large, and extra large devices).
-- You can use predefined grid classes or Sass mixins for more semantic markup.
-
-Be aware of the limitations and [bugs around flexbox](https://github.com/philipwalton/flexbugs), like the [inability to use some HTML elements as flex containers](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers).
-
-Sounds good? Great, let's move on to seeing all that in an example.
+* container
+* row
+* flex
 
 ## Grid options
 
-While Bootstrap uses `em`s or `rem`s for defining most sizes, `px`s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the [font size](https://drafts.csswg.org/mediaqueries-3/#units).
+See how aspects of the DBK grid system work across multiple devices with a handy table.
 
-See how aspects of the Bootstrap grid system work across multiple devices with a handy table.
-
-<table class="table table-bordered table-striped table-responsive">
+<table>
   <thead>
     <tr>
       <th></th>
-      <th class="text-center">
-        Extra small<br>
-        <small>&lt;576px</small>
-      </th>
-      <th class="text-center">
-        Small<br>
-        <small>&ge;576px</small>
-      </th>
-      <th class="text-center">
-        Medium<br>
-        <small>&ge;768px</small>
-      </th>
-      <th class="text-center">
-        Large<br>
-        <small>&ge;992px</small>
-      </th>
-      <th class="text-center">
-        Extra large<br>
-        <small>&ge;1200px</small>
-      </th>
+      <th>Extra small<br><small>&lt;576px</small></th>
+      <th>Small<br><small>&ge;576px</small></th>
+      <th>Medium<br><small>&ge;768px</small></th>
+      <th>Large<br><small>&ge;992px</small></th>
+      <th>Extra large<br><small>&ge;1200px</small></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th class="text-nowrap" scope="row">Max container width</th>
+      <th>Max container width</th>
       <td>None (auto)</td>
       <td>540px</td>
       <td>720px</td>
@@ -82,7 +34,7 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
       <td>1140px</td>
     </tr>
     <tr>
-      <th class="text-nowrap" scope="row">Class prefix</th>
+      <th>Class prefix</th>
       <td><code>.col-</code></td>
       <td><code>.col-sm-</code></td>
       <td><code>.col-md-</code></td>
@@ -90,27 +42,25 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
       <td><code>.col-xl-</code></td>
     </tr>
     <tr>
-      <th class="text-nowrap" scope="row"># of columns</th>
+      <th># of columns</th>
       <td colspan="5">12</td>
     </tr>
     <tr>
-      <th class="text-nowrap" scope="row">Gutter width</th>
+      <th>Gutter width</th>
       <td colspan="5">30px (15px on each side of a column)</td>
     </tr>
     <tr>
-      <th class="text-nowrap" scope="row">Nestable</th>
+      <th>Nestable</th>
       <td colspan="5">Yes</td>
     </tr>
     <tr>
-      <th class="text-nowrap" scope="row">Column ordering</th>
+      <th>Column ordering</th>
       <td colspan="5">Yes</td>
     </tr>
   </tbody>
 </table>
 
 ## Auto-layout columns
-
-Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like `.col-sm-6`.
 
 ### Equal-width
 
@@ -120,31 +70,19 @@ For example, here are two grid layouts that apply to every device and viewport, 
 {% example html %}
 <div class="container">
   <div class="row">
-    <div class="col">
-      1 of 2
-    </div>
-    <div class="col">
-      2 of 2
-    </div>
+    <div class="col">1 of 2</div>
+    <div class="col">2 of 2</div>
   </div>
   <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col">
-      2 of 3
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+    <div class="col">1 of 3</div>
+    <div class="col">2 of 3</div>
+    <div class="col">3 of 3</div>
   </div>
 </div>
 {% endexample %}
 </div>
 
-Equal-width columns can be broken into multiple lines, but there is a [Safari flexbox bug](https://github.com/philipwalton/flexbugs#11-min-and-max-size-declarations-are-ignored-when-wrapping-flex-items) that prevents this from working without an explicit `flex-basis` or `border`. Our example works thanks to the `border` being set; you can do the same with `.col { border: 1px solid transparent; }`. Alternatively, you can set the flex-basis to the width of the column (e.g., `.col { flex: 1 0 50%; }`).
-
-Both these fixes have been documented in a [reduced test case outside Bootstrap](https://output.jsbin.com/micohor).
+Equal-width columns can be broken into multiple lines as such:
 
 <div class="doc-show-row">
 {% example html %}
@@ -162,32 +100,20 @@ Both these fixes have been documented in a [reduced test case outside Bootstrap]
 
 ### Setting one column width
 
-Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
+You can set the width of one column and have the sibling columns automatically resize around it.
 
 <div class="doc-show-row">
 {% example html %}
 <div class="container">
   <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-6">
-      2 of 3 (wider)
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+    <div class="col">1 of 3</div>
+    <div class="col-6">2 of 3 (wider)</div>
+    <div class="col">3 of 3</div>
   </div>
   <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-5">
-      2 of 3 (wider)
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+    <div class="col">1 of 3</div>
+    <div class="col-5">2 of 3 (wider)</div>
+    <div class="col">3 of 3</div>
   </div>
 </div>
 {% endexample %}
@@ -201,26 +127,14 @@ Use `col-{breakpoint}-auto` classes to size columns based on the natural width o
 {% example html %}
 <div class="container">
   <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-      1 of 3
-    </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
+    <div class="col col-lg-2">1 of 3</div>
+    <div class="col-md-auto">Variable width content</div>
+    <div class="col col-lg-2">3 of 3</div>
   </div>
   <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
+    <div class="col">1 of 3</div>
+    <div class="col-md-auto">Variable width content</div>
+    <div class="col col-lg-2">3 of 3</div>
   </div>
 </div>
 {% endexample %}
