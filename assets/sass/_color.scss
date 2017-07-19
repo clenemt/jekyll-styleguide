@@ -1,26 +1,26 @@
 // Color components
 .doc-color {
-    border: 1px solid $gray-03;
-    border-radius: $br;
-    overflow: hidden;
+  border: 1px solid $gray-03;
+  border-radius: $br;
+  overflow: hidden;
 }
 
 .doc-color__item {
-    color: $gray-01;
-    padding: ($spacer * 2) $spacer;
+  color: $gray-01;
+  padding: ($spacer * 2) $spacer;
 
-    > p {
-        font-size: $fs-code;
-        margin: ($spacer / 2) 0;
-        letter-spacing: $ls;
+  > p {
+    font-size: $fs-code;
+    margin: ($spacer / 2) 0;
+    letter-spacing: $ls;
 
-        &:first-child {
-            text-transform: uppercase;
-        }
+    &:first-child {
+      text-transform: uppercase;
     }
+  }
 
-    &--light {
-        color: $gray-05;
-    }
-
+  &--light {
+    color: $gray-05;
+  }
 }
+
