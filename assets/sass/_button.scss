@@ -1,0 +1,40 @@
+.doc-btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid $blue-02;
+  padding: .5rem .75rem;
+  font-size: $fs;
+  line-height: $lh;
+  border-radius: $br;
+  color: $blue-02;
+  background-color: transparent;
+  background-image: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: $blue-02;
+    border-color: $blue-02;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba($blue-02, .25);
+  }
+
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $blue-02;
+    border-color: $blue-02;
+  }
+}

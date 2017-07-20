@@ -4,7 +4,7 @@
   table,
   strong, p strong, a strong, li strong, ul strong, span strong, em strong,
   em, p em, li em, ul em, span em,
-  a, p a, li a, ul a, span a, strong a, em a {
+  a, p a:not(.doc-btn), li a, ul a, span a, strong a, em a {
     font-size: $fs;
     font-family: $ff;
     font-weight: $fw;
@@ -31,7 +31,7 @@
   }
 
   a, li a, ul a, span a, strong a, em a, a strong, a em,
-  p a, p a em, p a strong, p strong a, p em a {
+  p a:not(.doc-btn), p a em, p a strong, p strong a, p em a {
     color: $blue-02;
   }
 
@@ -52,6 +52,7 @@
     font-weight: 600;
     margin-top: ($spacer * 3);
     margin-bottom: ($spacer * 1.75);
+    text-transform: initial;
   }
 
   h1 { font-size: $fs-h1 }
