@@ -48,13 +48,13 @@ DBK UI uses greyscale. These colors are used for `text`, `backgrounds`, `lines` 
         <p><strong>grey-400</strong></p>
         <p>#d1d1d1</p>
       </div>
-      <div class="doc-color__item" style="background-color: #f6f6f6;">
-        <p><strong>grey-600</strong></p>
-        <p>#f6f6f6</p>
-      </div>
       <div class="doc-color__item" style="background-color: #e6e6e6;">
         <p><strong>grey-500</strong></p>
         <p>#e6e6e6</p>
+      </div>
+      <div class="doc-color__item" style="background-color: #f6f6f6;">
+        <p><strong>grey-600</strong></p>
+        <p>#f6f6f6</p>
       </div>
     </div>
   </div>
