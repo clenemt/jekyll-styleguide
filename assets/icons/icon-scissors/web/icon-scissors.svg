@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-scissors</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon-scissors" fill="#2D2D2D">
-            <g transform="translate(13.665936, 12.000000)">
-                <path d="M3.83406353,21 C4.66249065,21 5.33406353,20.3284271 5.33406353,19.5 C5.33406353,18.6715729 4.66249065,18 3.83406353,18 C3.0056364,18 2.33406353,18.6715729 2.33406353,19.5 C2.33406353,20.3284271 3.0056364,21 3.83406353,21 Z M3.83406353,23 C1.9010669,23 0.334063527,21.4329966 0.334063527,19.5 C0.334063527,17.5670034 1.9010669,16 3.83406353,16 C5.76706015,16 7.33406353,17.5670034 7.33406353,19.5 C7.33406353,21.4329966 5.76706015,23 3.83406353,23 Z" id="Oval-6" fill-rule="nonzero"></path>
-                <path d="M15.8340635,21 C16.6624907,21 17.3340635,20.3284271 17.3340635,19.5 C17.3340635,18.6715729 16.6624907,18 15.8340635,18 C15.0056364,18 14.3340635,18.6715729 14.3340635,19.5 C14.3340635,20.3284271 15.0056364,21 15.8340635,21 Z M15.8340635,23 C13.9010669,23 12.3340635,21.4329966 12.3340635,19.5 C12.3340635,17.5670034 13.9010669,16 15.8340635,16 C17.7670602,16 19.3340635,17.5670034 19.3340635,19.5 C19.3340635,21.4329966 17.7670602,23 15.8340635,23 Z" id="Oval-6-Copy" fill-rule="nonzero"></path>
-                <rect id="Rectangle-18" transform="translate(10.200089, 9.160254) rotate(-60.000000) translate(-10.200089, -9.160254) " x="0.200088931" y="8.16025404" width="20" height="2" rx="1"></rect>
-                <rect id="Rectangle-18-Copy" transform="translate(9.200089, 9.160254) scale(-1, 1) rotate(-60.000000) translate(-9.200089, -9.160254) " x="-0.799911069" y="8.16025404" width="20" height="2" rx="1"></rect>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><title>icon-scissors</title><g transform="translate(13.666 12)" fill="#2D2D2D" fill-rule="evenodd"><path d="M3.834 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 2a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zM15.834 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 2a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" fill-rule="nonzero"/><rect transform="rotate(-60 10.2 9.16)" x=".2" y="8.16" width="20" height="2" rx="1"/><rect transform="scale(-1 1) rotate(-60 0 25.095)" x="-.8" y="8.16" width="20" height="2" rx="1"/></g></svg>

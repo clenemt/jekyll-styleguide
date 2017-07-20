@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-chevron-alt__left</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon-chevron-alt__left" fill="#2D2D2D">
-            <path d="M23.2426407,25.2348445 L26.2518627,25.2348445 C26.7990543,25.2348445 27.2426407,25.6787093 27.2426407,26.2348445 C27.2426407,26.7871292 26.7916655,27.2348445 26.2518627,27.2348445 L22.2334187,27.2348445 C21.9613352,27.2348445 21.7148674,27.1251016 21.5358122,26.9463816 C21.3533301,26.7589113 21.2426407,26.5124694 21.2426407,26.2440665 L21.2426407,22.2256225 C21.2426407,21.6784309 21.6865055,21.2348445 22.2426407,21.2348445 C22.7949254,21.2348445 23.2426407,21.6858197 23.2426407,22.2256225 L23.2426407,25.2348445 Z" transform="translate(24.242641, 24.234844) rotate(45.000000) translate(-24.242641, -24.234844) "></path>
-        </g>
-    </g>
-</svg>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><title>icon-chevron-alt__left</title><path d="M22.828 24.235l2.128 2.128a.993.993 0 0 1-.006 1.407 1 1 0 0 1-1.408.007l-2.841-2.842a.984.984 0 0 1-.29-.697c.004-.261.1-.514.29-.704l2.841-2.841a.993.993 0 0 1 1.408.006 1 1 0 0 1 .006 1.408l-2.128 2.128z" fill="#2D2D2D" fill-rule="evenodd"/></svg>

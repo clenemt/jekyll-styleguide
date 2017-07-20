@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-facebook</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon-facebook" fill="#2D2D2D">
-            <g transform="translate(9.000000, 9.000000)">
-                <path d="M15,28 C22.18,28 28,22.18 28,15 C28,7.82 22.18,2 15,2 C7.82,2 2,7.82 2,15 C2,22.18 7.82,28 15,28 M15,30 C6.716,30 0,23.284 0,15 C0,6.716 6.716,0 15,0 C23.284,0 30,6.716 30,15 C30,23.284 23.284,30 15,30" id="Page-1"></path>
-                <path d="M16.6573302,11.3066578 C16.6573302,10.6764477 16.7219073,10.3418917 17.6905635,10.3418917 L18.9844393,10.3418917 L18.9844393,8 L16.9133044,8 C14.4266978,8 13.550628,9.16705569 13.550628,11.1354896 L13.550628,12.6604424 L12,12.6604424 L12,15.0023341 L13.550628,15.0023341 L13.550628,22.0046682 L16.65344,22.0046682 L16.65344,15.0023341 L18.7245749,15.0023341 L19,12.6604424 L16.65344,12.6604424 L16.6573302,11.3066578 Z" id="Path"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><title>icon-facebook</title><g fill="#2D2D2D" fill-rule="evenodd"><path d="M24 37c7.18 0 13-5.82 13-13s-5.82-13-13-13-13 5.82-13 13 5.82 13 13 13m0 2c-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15"/><path d="M25.657 20.307c0-.63.065-.965 1.034-.965h1.293V17h-2.07c-2.487 0-3.363 1.167-3.363 3.135v1.525H21v2.342h1.55v7.003h3.103v-7.003h2.072L28 21.66h-2.347l.004-1.353z"/></g></svg>
