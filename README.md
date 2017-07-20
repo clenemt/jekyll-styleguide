@@ -28,3 +28,11 @@ npm run serve
 ```
 
 For a full picture, please take a look inside `package.json`.
+
+
+## Todo
+
+### Icons
+- Give icons proper naming convention
+- Update sketch
+- Update file and folder names

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-warning</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-warning" fill="#2D2D2D">
+            <g transform="translate(13.000000, 15.000000)">
+                <rect id="Rectangle-19" x="10" y="6" width="2" height="5" rx="1"></rect>
+                <rect id="Rectangle-19-Copy" x="10" y="12" width="2" height="2" rx="1"></rect>
+                <path d="M3.56611368,15 L18.4338863,15 L11,2.83545875 L3.56611368,15 Z M9.95522972,0.7096241 C10.5322404,-0.234575218 11.4656303,-0.238059487 12.0447703,0.7096241 L20.9552297,15.2903759 C21.5322404,16.2345752 21.1103261,17 20.008845,17 L1.991155,17 C0.891470458,17 0.465630313,16.2380595 1.04477028,15.2903759 L9.95522972,0.7096241 Z" id="Rectangle-16" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

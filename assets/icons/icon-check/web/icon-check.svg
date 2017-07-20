@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-check" fill="#2D2D2D">
+            <g transform="translate(16.000000, 18.000000)" id="Combined-Shape-Copy">
+                <path d="M6.06734387,13.0612374 C6.30260998,13.0388378 6.53083529,12.9330163 6.70500548,12.7462417 L16.2517936,2.50856485 C16.6311489,2.10175608 16.6069482,1.47123259 16.2030327,1.09457529 C15.7963012,0.715292015 15.1660718,0.740300554 14.7890862,1.14456813 L5.87912734,10.6993292 L2.18291295,7.25255352 C1.78506104,6.88155062 1.1483902,6.9000188 0.771732903,7.3039343 C0.392449624,7.71066582 0.416200302,8.33972225 0.818916226,8.71526092 L5.21138247,12.811302 C5.44737736,13.0313708 5.76740162,13.1144026 6.06734387,13.0612374 L6.06734387,13.0612374 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

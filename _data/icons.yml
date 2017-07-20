@@ -1,0 +1,66 @@
+- name: Navigation
+  description:
+  icons:
+    - name: icon-arrow__down
+    - name: icon-arrow__left
+    - name: icon-arrow__right
+    - name: icon-arrow__up
+    - name: icon-chevron__down
+    - name: icon-chevron__left
+    - name: icon-chevron__right
+    - name: icon-chevron__up
+    - name: icon-arrow-alt__down
+    - name: icon-arrow-alt__left
+    - name: icon-arrow-alt__right
+    - name: icon-arrow-alt__up
+    - name: icon-chevron-alt__down
+    - name: icon-chevron-alt__left
+    - name: icon-chevron-alt__right
+    - name: icon-chevron-alt__up
+- name: E-Commerce
+  description:
+  icons:
+    - name: icon-basket
+    - name: icon-truck
+    - name: icon-gift
+    - name: icon-barcode
+    - name: icon-stylist
+    - name: icon-scissors
+    - name: icon-measure
+    - name: icon-receipt
+    - name: icon-camera
+    - name: icon-id
+- name: General
+  description:
+  icons:
+    - name: icon-locationpin
+    - name: icon-phone
+    - name: icon-mail
+    - name: icon-search
+    - name: icon-zoomin
+    - name: icon-zoomout
+    - name: icon-home
+    - name: icon-user
+    - name: icon-adduser
+    - name: icon-printer
+    - name: icon-delete
+    - name: icon-favourite
+    - name: icon-menu
+    - name: icon-clock
+    - name: icon-checkcircle
+    - name: icon-close
+    - name: icon-settings
+    - name: icon-image
+    - name: icon-message
+    - name: icon-chat
+    - name: icon-conversation
+    - name: icon-twitter
+    - name: icon-facebook
+    - name: icon-pinterest
+    - name: icon-youtube
+    - name: icon-instagram
+    - name: icon-googleplus
+    - name: icon-whatsapp
+    - name: icon-check
+    - name: icon-fail
+    - name: icon-warning
