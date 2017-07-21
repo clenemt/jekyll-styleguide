@@ -9,10 +9,7 @@
 .doc-icon__img {
   display: flex;
   justify-content: center;
-
-  > img {
-    padding: 48px;
-  }
+  padding: $spacer * 2;
 }
 
 .doc-icon__info {
