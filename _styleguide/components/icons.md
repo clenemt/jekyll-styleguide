@@ -55,20 +55,20 @@ Icons should be used to quickly and clearly communicate tasks and actions (for e
 </div>
 
 ## Sizes
-Icons ship in three sizes, `small`, `default`, `large`.
+Icons ship in three sizes, small (`sm`), `default`, large (`lg`).
 
 | CSS modifier | Size (`px`)|
 | ------------ | ------- |
-| `icon--small`| 24 * 24 |
+| `icon--sm`| 24 * 24 |
 | -            | 48 * 48 |
-| `icon--large`| 72 * 72 |
+| `icon--lg`| 72 * 72 |
 
 ## Usage
 
 ### Website
 {% example html %}
 <!-- Small icon -->
-<svg title="icon-chat" role="img" class="icon icon--small">
+<svg title="icon-chat" role="img" class="icon icon--sm">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chat"></use>
 </svg>
 
@@ -78,7 +78,12 @@ Icons ship in three sizes, `small`, `default`, `large`.
 </svg>
 
 <!-- Large icon -->
-<svg title="icon-chat" role="img" class="icon icon--large">
+<svg title="icon-chat" role="img" class="icon icon--lg">
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chat"></use>
+</svg>
+
+<!-- Colored icon -->
+<svg title="icon-chat" role="img" class="icon t-red">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chat"></use>
 </svg>
 {% endexample %}
@@ -90,7 +95,6 @@ Icons ship in three sizes, `small`, `default`, `large`.
 | Web        | {icon-name}    | svg       | 48 * 48 |
 | iOS        | {icon-name}<br />{icon-name}**@2x**<br />{icon-name}**@3x**    | png<br />png<br />png       | 24 * 24<br />48 * 48<br />72 * 72 |
 | Android    | **mdpi**/{icon-name}<br />**hdpi**/{icon-name}<br />**xhdpi**/{icon-name}<br />**xxhdpi**/{icon-name}<br />**xxxhdpi**/{icon-name} | png<br />png<br />png<br />png<br />png   | 24 * 24<br />36 * 36<br />48 * 48<br />72 * 72<br />96 * 96 |
-
 
 ## Adding & Updating icons
 
