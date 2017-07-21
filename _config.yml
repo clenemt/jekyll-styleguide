@@ -4,21 +4,24 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: My styleguide
+title: de Bijenkorf Styleguide
 description: >                    # this means to ignore newlines until "baseurl:"
   Write an awesome description about your styleguide web site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results).
 authors: >                        # the authors of your styleguide
-  @clenemt, some other dude, and beloved contributors
+  @developers from Magazijn de Bijenkorf
 baseurl: ""                       # the subpath of your styleguide, e.g. `/styleguide`
-url: "http://mystyleguide.com"    # the base hostname & protocol for your site
+url: ""                           # the base hostname & protocol for your site
 lang: "en"                        # the <html> default lang
 
 # Styleguide specific
-styleguide-css: ""                # (opt) your styleguide stylesheet url
+styleguide-css: "https://www.debijenkorf.nl/etc/designs/debijenkorf-website/clientlib-all.232de5556d4148d75b55012e1230616c.css" # (opt) your styleguide stylesheet url
 styleguide-js: ""                 # (opt) your styleguide javascript url
-styleguide-main-menu: true        # (opt) put to `false` to disable the main menu
+
+# Design specific
+design:
+  main-menu: true                 # (opt) put to `false` to disable the main menu
 
 # Collections
 collection_name: 'styleguide'

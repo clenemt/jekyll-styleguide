@@ -10,6 +10,8 @@
 .doc-row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 // Everything under this will be a `col`
@@ -20,4 +22,6 @@
   max-width: 100%;
   flex-basis: 0;
   flex-grow: 1;
+  padding-left: 10px;
+  padding-right: 10px;
 }

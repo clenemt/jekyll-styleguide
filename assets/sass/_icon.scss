@@ -1,0 +1,32 @@
+// Icon components
+.doc-icon {
+  border: 1px solid $gray-03;
+  border-radius: $br;
+  overflow: hidden;
+  margin-bottom: ($spacer * 2);
+}
+
+.doc-icon__img {
+  display: flex;
+  justify-content: center;
+  padding: $spacer * 2;
+}
+
+.doc-icon__info {
+  background-color: $gray-05;
+  padding: $spacer;
+
+  > p {
+    font-size: $fs-code;
+    font-weight: bold;
+  }
+
+  > ul {
+    padding: 0 0 0 $spacer;
+
+    a {
+      font-size: $fs-code;
+    }
+  }
+
+}

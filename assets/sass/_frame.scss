@@ -1,0 +1,32 @@
+// This file is incldued both inside resizable iframed
+// and also on the page, use it wisely
+
+.doc-show-row .row + .row {
+  margin-top: 1rem
+}
+
+.doc-show-row .row > .col,
+.doc-show-row .row > [class^=col-] {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2)
+}
+
+.doc-show-row .flex-items-bottom,
+.doc-show-row .flex-items-middle,
+.doc-show-row .flex-items-top {
+  min-height: 6rem;
+  background-color: rgba(255,0,0,.1)
+}
+
+.doc-show-row-flex-cols .row {
+  min-height: 10rem;
+  background-color: rgba(255,0,0,.1)
+}
+
+.doc-bg > * {
+  padding: .5rem;
+  margin-bottom: .5rem;
+  line-height: 1rem;
+}
